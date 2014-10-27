@@ -76,7 +76,6 @@ module.exports.prototype = {
         manifest.name = config.packageName();
         manifest.version = config.version();
         manifest.title = config.name();
-        manifest.author = sanitize(config.author());
         manifest.maintainer = sanitize(config.author())  + ' <' + config.doc.find('author').attrib.email + '>';
         manifest.description = sanitize(config.description());
         manifest.architecture = arch;
